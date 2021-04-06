@@ -16,6 +16,7 @@ class App extends Component {
       <div className="App">
         <Header img={background} />
         <About />
+        <h2>Nasze podróże</h2>
         <section className="travels">
           <Travel img={travels[0].src} />
         </section>

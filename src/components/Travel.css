@@ -1,5 +1,6 @@
 
 .travel {
+  position: relative;
   width: 90%;
   margin-left: 5%;
   margin-top: 20px;
@@ -29,6 +30,9 @@
   margin-left: 10px;
   margin-bottom: 5px;
 }
+.travel_desc .images_container {
+  padding-bottom: 15px;
+}
 .travel_desc .images_container div{
   display: flex;
   flex-direction: row;
@@ -40,6 +44,15 @@
   margin-bottom: 10px;
   border: 1px solid black;
   cursor: pointer;
+}
+.input {
+  position:absolute;
+  right: 5%;
+  top: 10%;
+}
+.input label {
+  margin-right: 5px;
+  font-size: 16px;
 }
 
 @media(min-width: 640px) {
@@ -78,7 +91,10 @@
     margin-left: auto;
     margin-right: auto;
   } 
-
+  .travel{
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 

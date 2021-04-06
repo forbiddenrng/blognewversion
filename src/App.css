@@ -12,9 +12,27 @@
     margin-left: auto;
     margin-right: auto;
   }
+  h2 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 36px;
+  }
+
+}
+h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 /* travel */
 .travels {
   height: 200vh;
   
+}
+@media(min-width: 768px) {
+  h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
 }
