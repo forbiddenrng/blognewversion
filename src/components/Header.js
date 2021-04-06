@@ -16,6 +16,7 @@ class Header extends Component {
           <p><span>Podziwiaj świat</span></p>
           <p><span>Zainspiruj się</span></p>
           <p><span>Witaj na blogu</span></p>
+          <a href="#about">Wchodzę</a>
         </header>
       </div>
 
