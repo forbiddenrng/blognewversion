@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SRLWrapper } from "simple-react-lightbox";
 import './Travel.css'
 class Travel extends Component {
   render() {
@@ -17,7 +18,9 @@ class Travel extends Component {
         <div className="travel_desc">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum adipisci recusandae molestiae? Laudantium eum aut commodi quam, veniam dicta odio obcaecati, dignissimos minima at, expedita quod reprehenderit sequi officiis!</p>
           <div className="images_container">
-            {imgs}
+            <SRLWrapper>
+              {imgs}
+            </SRLWrapper>
           </div>
         </div>
       </div>
