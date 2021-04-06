@@ -4,6 +4,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Travel from './components/Travel'
 import imagesArray from './images'
+import background from './img/two.jpg'
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header />
+        <Header img={background} />
         <About />
         <section className="travels">
           <Travel img={travels[0].src} />

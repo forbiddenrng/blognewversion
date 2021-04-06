@@ -15,10 +15,10 @@ class Travel extends Component {
           <p>Miejsce: Gdynia</p>
         </div>
         <div className="travel_desc">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum adipisci recusandae molestiae? Laudantium eum aut commodi quam, veniam dicta odio obcaecati, dignissimos minima at, expedita quod reprehenderit sequi officiis!</p>
           <div className="images_container">
             {imgs}
           </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum adipisci recusandae molestiae? Laudantium eum aut commodi quam, veniam dicta odio obcaecati, dignissimos minima at, expedita quod reprehenderit sequi officiis!</p>
         </div>
       </div>
     );
