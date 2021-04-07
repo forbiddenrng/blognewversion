@@ -2,26 +2,35 @@ import React, { Component } from 'react';
 import { SRLWrapper } from "simple-react-lightbox";
 import './Travel.css'
 class Travel extends Component {
+  state = {
+    isEnglish: false,
+  }
+
+  handleCheckboxChange = () => {
+    this.setState({
+      isEnglish: !this.state.isEnglish
+    })
+  }
   render() {
-    const imgs = this.props.img.map(img => {
+    const { author, place, descriptionPL, descriptionEN, src } = this.props.data;
+    console.log(src)
+    const imgs = src.map(img => {
       return <img src={img} alt={img} key={img} />
     })
-    console.log(imgs)
-
-
+    const description = this.state.isEnglish ? descriptionEN : descriptionPL
     return (
       <div className="travel">
         <div className="travel_data">
-          <h4>Autor: <span>Antek Gawron</span></h4>
-          <p>Miejsce: Gdynia</p>
+          <h4>Autor: <span>{author}</span></h4>
+          <p>Miejsce: {place}</p>
         </div>
         <div className="travel_desc">
           <div className="input">
             <label htmlFor="version">en</label>
-            <input type="checkbox" name="version" id="version" />
+            <input type="checkbox" value={this.state.isEnglish} name="version" id="version" onChange={this.handleCheckboxChange} />
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum adipisci recusandae molestiae? Laudantium eum aut commodi quam, veniam dicta odio obcaecati, dignissimos minima at, expedita quod reprehenderit sequi officiis!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus officia delectus quis. Nulla, quisquam magnam. Cupiditate nemo, amet quas dicta vero dolorum placeat debitis, quis veniam, cum quibusdam aspernatur.
+          <p>
+            {description}
           </p>
           <div className="images_container">
             <SRLWrapper>
