@@ -29,10 +29,39 @@ h2 {
   height: 200vh;
   
 }
+.browser {
+  display: flex;
+  justify-content: space-around;
+}
+.browser input {
+  width: 100px;
+  padding: 3px 6px;
+  margin-top: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+
+}
+.browser input:focus{
+  border-color: rgb(70, 114, 42);
+}
+.error {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Lato';
+}
+
 @media(min-width: 768px) {
   h2 {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 26px;
+  }
+  .browser input {
+    margin-top: 25px;
+    width: 120px;
+  }
+  .error {
+    font-size: 24px;
   }
 }

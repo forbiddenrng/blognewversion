@@ -46,6 +46,9 @@
   cursor: pointer;
 }
 .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position:absolute;
   right: 5%;
   top: 10%;

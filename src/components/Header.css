@@ -9,20 +9,12 @@
   font-weight: bold;
   font-size: 26px;
 }
-.header div input{
-  padding: 3px 5px;
-  width: 120px;
-}
 @media(min-width: 640px){
   .header{
     padding: 25px 40px;
   }
   .header h1 {
     font-size: 30px;
-  }
-  .header div input{
-    padding: 5px 7px;
-    width: 140px;
   }
 }
 @media(min-width: 768px){
@@ -32,18 +24,10 @@
   .header h1 {
     font-size: 36px;
   }
-  .header div input{
-    padding: 7px 10px;
-    width: 160px;
-  }
 }
 @media(min-width: 1024px){
   .header h1 {
     font-size: 40px;
-  }
-  .header div input{
-    padding: 7px 10px;
-    width: 160px;
   }
 }
 .photo img {

@@ -13,7 +13,6 @@ class Travel extends Component {
   }
   render() {
     const { author, place, descriptionPL, descriptionEN, src } = this.props.data;
-    console.log(src)
     const imgs = src.map(img => {
       return <img src={img} alt={img} key={img} />
     })
