@@ -9,10 +9,10 @@ class Header extends Component {
         </section>
         <header className="photo">
           <img src={this.props.img} alt="img" />
-          <p><span>Podziwiaj świat</span></p>
-          <p><span>Zainspiruj się</span></p>
-          <p><span>Witaj na blogu</span></p>
-          <a href="#about">Wchodzę</a>
+          <p><span>Admire the World</span></p>
+          <p><span>Get inspired</span></p>
+          <p><span>Welcome</span></p>
+          <a href="#about">Enter</a>
         </header>
       </div>
 

@@ -33,9 +33,9 @@ class App extends Component {
         <Header img={background} change={this.changeState} />
         <About />
         <div className="browser">
-          <h2>Nasze podróże</h2>
+          <h2>Our travels</h2>
           <div>
-            <input value={this.state.inputValue} onChange={this.handleInputChange} type="text" placeholder="Szukaj miejsc" />
+            <input value={this.state.inputValue} onChange={this.handleInputChange} type="text" placeholder="Search..." />
           </div>
         </div>
         <section className="travels">

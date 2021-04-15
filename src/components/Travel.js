@@ -20,8 +20,8 @@ class Travel extends Component {
     return (
       <div className="travel">
         <div className="travel_data">
-          <h4>Autor: <span>{author}</span></h4>
-          <p>Miejsce: {place}</p>
+          <h4>Author: <span>{author}</span></h4>
+          <p>Place: {place}</p>
         </div>
         <div className="travel_desc">
           <div className="input">
