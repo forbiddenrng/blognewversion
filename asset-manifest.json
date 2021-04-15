@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/blognewversion/static/css/main.694574d1.chunk.css",
+    "main.js": "/blognewversion/static/js/main.1b3e71a5.chunk.js",
+    "main.js.map": "/blognewversion/static/js/main.1b3e71a5.chunk.js.map",
+    "runtime-main.js": "/blognewversion/static/js/runtime-main.6aa05406.js",
+    "runtime-main.js.map": "/blognewversion/static/js/runtime-main.6aa05406.js.map",
+    "static/js/2.a9cf610c.chunk.js": "/blognewversion/static/js/2.a9cf610c.chunk.js",
+    "static/js/2.a9cf610c.chunk.js.map": "/blognewversion/static/js/2.a9cf610c.chunk.js.map",
+    "index.html": "/blognewversion/index.html",
+    "static/css/main.694574d1.chunk.css.map": "/blognewversion/static/css/main.694574d1.chunk.css.map",
+    "static/js/2.a9cf610c.chunk.js.LICENSE.txt": "/blognewversion/static/js/2.a9cf610c.chunk.js.LICENSE.txt",
+    "static/media/antekgawron1.77c26fac.jpg": "/blognewversion/static/media/antekgawron1.77c26fac.jpg",
+    "static/media/antekgawron2.fbfa91ab.jpg": "/blognewversion/static/media/antekgawron2.fbfa91ab.jpg",
+    "static/media/antekgawron3.07c70dae.jpg": "/blognewversion/static/media/antekgawron3.07c70dae.jpg",
+    "static/media/two.fbfa91ab.jpg": "/blognewversion/static/media/two.fbfa91ab.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6aa05406.js",
+    "static/js/2.a9cf610c.chunk.js",
+    "static/css/main.694574d1.chunk.css",
+    "static/js/main.1b3e71a5.chunk.js"
+  ]
+}
