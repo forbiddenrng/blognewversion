@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
-  /* background-color: #f4f4f4; */
-}
+
 @media(min-width: 1024px) {
   .App{
     width: 80%;
@@ -17,23 +15,22 @@
     margin-bottom: 35px;
     font-size: 36px;
   }
-
 }
+.App {
+  min-height: 150vh;
+  }
 h2 {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
 /* travel */
-.travels {
-  height: 200vh;
-  
-}
+
 .browser {
   display: flex;
   justify-content: space-around;
 }
-.browser input {
+/* .browser input {
   width: 100px;
   padding: 3px 6px;
   margin-top: 15px;
@@ -44,6 +41,17 @@ h2 {
 }
 .browser input:focus{
   border-color: rgb(70, 114, 42);
+} */
+.select_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#continent_select {
+  width: 100px;
+  padding: 3px 6px;
+  font-size: 14px;
+  
 }
 .error {
   text-align: center;
@@ -52,13 +60,16 @@ h2 {
 }
 
 @media(min-width: 768px) {
+  .browser{
+    height: 70px;
+    align-items: center;
+  }
   h2 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    /* margin-top: 25px; */
+    /* margin-bottom: 25px; */
     font-size: 26px;
   }
-  .browser input {
-    margin-top: 25px;
+  #select_container{
     width: 120px;
   }
   .error {

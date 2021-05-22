@@ -9,39 +9,155 @@ import background from './img/two.jpg'
 class App extends Component {
   state = {
     inputValue: "",
+    selectValue: "All",
   }
   handleInputChange = (e) => {
     this.setState({
       inputValue: e.target.value,
     })
   }
+  handleSelect = (e) => {
+    this.setState({
+      selectValue: e.target.value,
+    })
+  }
+
   render() {
     const travels = [
-      { author: 'Antek Gawron', place: 'Gdynia', descriptionPL: 'to jest wersja po polsku - test', descriptionEN: 'this is an english version - test', src: [...imagesArray.gawronA] },
-      { author: 'Antek Gawron', place: 'Sandomierz', descriptionPL: 'to jest wersja po polsku - test Sandomierz', descriptionEN: 'this is an english version - test Sandomierz', src: [...imagesArray.gawronA] },
+      // { author: 'Antek Gawron', place: 'Gdynia', continent: "Europe", description: 'to jest wersja po polsku - test', src: [...imagesArray.gawronA] },
+      // { author: 'Antek Gawron', place: 'Sandomierz', continent: "Asia", description: 'this is an english version - test Sandomierz', src: [...imagesArray.gawronA] },
+      {author: "nwm", place:"Mallorca", continent: "Europe", description: `Hi guys!  
+      I don't know how about you, but I love travelling. Today I'm writing to tell you about my trip to Mallorca.   
+      I went there with my family for a week during the last holidays. Firstly, I must say that we took luggage full of food because we supposed that everything cost an arm and a leg there. But at the airport, it turned out that our baggage was too heavy and, to avoid the excess luggage charge, we repacked it to our hand luggage. Finally, with my overhead compartment full of convenience food, we took off.   
+      I customised our itinerary, and we went sightseeing a lot. The most remarkable place I've visited was Cap de Formentor. We got there by the narrow mountain road. The driver had to be very focused in order not to have a head-on collision. At the top, we admired stunning views. The landscape was mesmerising. I was astonished because I've never seen such a picturesque place. I was over the moon.  
+      What's more, my aunt, who lives there, took us to the best local restaurant. I ordered paella, which is seafood with rice and a diversity of spices. I recommend this dish from traditional cuisine. All evening was eminent.  
+      Also, I want to add that it was an adventure holiday for me. Besides enjoying sunbathing and being a typical holidaymaker, I've tried parasailing. It was a lifetime experience! I soared through the air at a considerable height. I was filled in with pure exhilaration. For sure, it was an unforgettable feeling.  
+      That's all for today. Have you ever been to Mallorca? If not, I recommend visiting this destination. I am looking forward to your comments. See you!`, src: [...imagesArray.mallorca] },
+      {author: 'nwm', place: 'Sweden', continent: 'Europe', description: `Hi everyone! I would like to tell you about my trip to Sweden.
+
+      This year, my family and I decided to spend our holidays differently than usual. We generally went to the warm golden beaches of the Mediterranean and sunbathed in the sunshine. However, this year we were opting to spend our holidays actively. We aimed to visit Sweden by bike. We also decided not to create a detailed itinerary but to plan the trip on an ongoing basis.
+      
+      On the first Friday of July, we commuted to Gdynia, from where we took the ferry to Karlskrona. The next day we reached our destination. Before we set off on our bicycle trip, we secured our luggage on the carriers. Then we went on tour. During our excursion, we admired the stunning views of southern Sweden. However, not only did we be impressed by the extraordinariness of nature, but also the remarkable Swedish-style housing estate drawn our attention.
+      
+      While the earlier outing was easy, the return home caused us a lot of trouble. Initially, we had trouble finding our way to the port. If the departure of the ferry had not been delayed, we would have been late. Additionally, my sister almost fell overboard and miraculously avoided the accident. Moreover, my parents lost their boarding passes, so they couldn't enter their cabin. However, despite the unpleasantness, we arrived home safely.
+      
+      Never have I been on a combination of a voyage and a bicycle excursion before, and to be honest, it was an interesting experience. Therefore, I encourage you to spend your holiday in a way that you have never done before.`, src: [...imagesArray.sweden]},
+      {author: 'nwm', place: 'Turkey', continent: 'Asia', description: `Hi everyone! Guess what!   
+
+      Last summer my family decided to go on a trip to Turkey, exactly to Alanya for 7 days. We were very excited because it was our first time visiting that country.   
+      
+      At first, we had to go to the Warsaw Chopin Airport. We checked in, our luggage was taken, and we were ready to go. Unfortunately, our plane had some technical problems so we were forced to wait and we took off behind schedule.   
+      
+      Finally, after three hours we reached the destination. We checked in in a 4-star Hotel and started our vacation. We had a full board, suite and there were three swimming pools with slides. They were awesome!   
+      
+      We spent most of the time in the hotel. We had a lot of attractions, for example, aerobic or acrobatic performances. After dinner, we would go to the town and observe residents’ usual life. I love the specific vibe of this town because wherever you looked, you could see lots of small shops with clothes and with local food. My favourite delicacy was Lokum. It is sugar with starch gel.  If I lived there, I would eat it every day!  
+      
+      It was the best trip of my life!`, src: [...imagesArray.turkey]},
+      {author: 'nwm', place: 'Croatia', continent: 'Europe', description: `Hi everyone,  
+
+      I am writing this post to share with all of you my recent travel experience. To those who didn’t know, I have always dreamt about going to Croatia, and so my dream came true!  
+      
+      My journey began on the 19th of August. We headed to Rogoznica, a small but cozy town located in the South West of the country. A holiday resort ten minutes from the centre was booked by my parents. We gathered all unnecessary stuff and set off for our beach holidays.  
+      
+      No one expected that it would take us 24 hours straight to get there. But when we arrived the view was breathtaking. In the first seconds, I realized it was definitely worth the effort. You could see palm trees all over the town, the sun was gently heating our skins, and I swear I have never ever seen such a beautiful sky.   
+      
+      We had no intention of wasting any of our precious time, so even though it was the first day, we found a tour guide who took us on an orientation trip. He showed us every bit of mysterious and stunning views this town had to offer us. It turned out he kept the cherry on top for the next day.  
+      
+      As the sun rose on the second day, we were invited to see around a peculiar and amazing island. We crossed the sea on a sailing boat on which we were able to admire the charms of the town from another perspective. On this day, we also had a chance to go fishing and what I loved the most, diving. Adventure holidays are what I love the most, so every other day was different in its own way.  
+      
+      What I expected it to be before my arrival? Actually, everything that happened. I had never had such a good rest. I was amused with everything, and for sure, if I were asked where to go next holidays, I would pick Croatia again.   
+      
+      Share and comment, love you all! Till the next time, bye!`, src: [...imagesArray.crotia]},
+      {author: 'nwm', place: 'Grand Canyon', continent: 'North America', description: `Hi guys! 
+      I am writing this post to tell you all about my trip to the Grand Canyon. 
+      From the very beginning of my trip, I had to face my biggest nightmare -packing. In order to get back to Poland, I had to take a plane, so I did my best to avoid excess luggage charges. We set off from Palestine, Texas, and it took us 3 days to finally reach our destination. Meanwhile, we stopped at Amarillo and Albuquerque to get some rest and sightseeing. As we crossed the border of Arizona, I got a feeling of excitement and fulfilment because seeing the Grand Canyon had always been my dream.  
+      We checked into our hotel room and went to sleep early to be ready for a whole day of to-die-for views. Unfortunately, it turned out that my companion was more of a holidaymaker rather than a backpacking lover. Therefore, I am planning on coming back there with a group of my adventurous friends to spend a few days hiking and camping. 
+      Besides this little disadvantage, this was the best trip of my life. My dreams finally came true. 
+      While being on the top of the Canyon, I got emotional, and I cried my heart. I recommend this destination to everyone who loves nature and physical activity.  
+       
+      That’s all for today. I am looking forward to your comments.
+      `, src: [...imagesArray.grandcanyon]},
+      {author: 'nwm', place: 'Vietnam', continent: 'Asia', description: `A year ago, during winter break, I flew with my family to Vietnam. This was definitely one of the best travels but also experiences I’ve ever had in my whole life. And here’s why.   
+
+      First of all, in Vietnam, I saw the most picturesque and stunning views. Rice fields in the mountains near the bamboo forest were really peaceful and worthwhile. Another seascape I would never forget is when we were kayaking in a bay surrounded by mogotes covered with tropical plants. But don’t forget to use insect repellent while going on hiking in this part of the world.   
+      
+      Now onto Vietnamese cuisine. Obviously, it is delicious. There is a variety of fresh products depending on which part of the country you’re in. Mouth-watering seafood on the coast, silky tofu in the mountains and of course omnipresent pho soup, spring rolls and ripe fruit. Just keep in mind that sanitary standards in Vietnam are very distinct from what we are used to in Europe, and eating on the street and sitting on a very small plastic chair or eating in a very cramped place is ordinary and common.   
+      
+      We spent most of our time there in the capital- Hanoi. And because of the upcoming Chinese New Year, the whole city was decorated with traditional ornaments. We were lucky enough to see the New Year’s Eve celebration and beautiful fireworks. There is just one thing you have to remember about being a pedestrian in Hanoi. There is no such thing as a crosswalk. You simply have to go with the flow and avoid cars while crossing the road.   
+      
+      Summing up, I enjoyed my travel very much. Now I would like to visit also other Asian countries. I can recommend going there to everyone. I hope with those depictions and little tips, you’d feel encouraged to visit Vietnam.`, src: [...imagesArray.vietnam]},
+      {author: 'nwmss', place: 'Italy', continent: "Europe", description: `Hi everyone!  
+
+      Today, I’d like to write about the best holidays I have ever had. It was after my graduation from middle school. I had been dreaming about doing something unusual and memorable. Unexpectedly, my best friend came up with an idea to visit her aunt who lives in Italy. So we decided to collect enough money and go there for three weeks.  
+      
+      The trip was something more similar to beach holidays than sightseeing, but I loved it so much, and I had a good rest. The place of our accommodation turned out to be a charming village located on a picturesque island called Sardinia. We resided alone in a huge, old Italian house. It was the first time when we were somewhere without parents, so we had to become more independent, starting from cooking and cleaning the house by ourselves. It was such great fun, but the fact that we were living there also had some disadvantages. For example, one day, there was a dangerous storm. We were forced to stay the whole day at home. During this time, we noticed that the roof and windows were leaking. We had to use every pot which we found to stop the flooding water. It cost us to stay the whole night being stressed and without sleep. Meantime we needed to clean up everything and check if the electrical system was still working. Despite this trouble which we had to put up with we were delighted because my friend’s aunt has a sports complex. It gave us an opportunity to try some extreme sports like kite-surfing, windsurfing, surfing etc. At first, I was a little scared because before our trip I had heard about some accidents caused by these activities, but finally, I didn’t get cold feet. During these sports, I was so excited, and I could feel free as a bird. The accompanying thrill was unforgettable. Now I can admit that I miss that pleasant feeling. Moreover, I met there a lot of wonderful people who were filled with passion for these sports and wanted to share with others which I admired a lot. Also, in return for our invitation, we were working in this sports club for the first week, so I had a chance to learn some basic phrases in Italian and learn how Italian daily life looks like.  
+      
+      That trip gave me a lot to think about. That’s why now I truly believe that travelling broadens our minds and sometimes it is a good idea to leave our daily life and explore the rest of the world.  `, src: [...imagesArray.italy]}
     ]
-    const travelsToDisplay = travels.filter(travel => {
-      return travel.place.toLocaleLowerCase().includes(this.state.inputValue.toLocaleLowerCase())
-    })
-    console.log(travelsToDisplay)
+    // const travelsToDisplay = travels.filter(travel => {
+    //   return travel.place.toLocaleLowerCase().includes(this.state.inputValue.toLocaleLowerCase())
+    // })
+    // console.log(travelsToDisplay)
+    // const travelSection = travelsToDisplay.map((travel, index) => {
+    //   return <Travel data={travel} key={index} />
+    // })
+    let travelsToDisplay = [...travels];
+    if (this.state.selectValue !== "All") {
+      travelsToDisplay = travels.filter(travel => {
+        return travel.continent === this.state.selectValue;
+      })
+    }
+
     const travelSection = travelsToDisplay.map((travel, index) => {
       return <Travel data={travel} key={index} />
     })
-
     return (
       <div className="App">
         <Header img={background} change={this.changeState} />
         <About />
         <div className="browser">
           <h2>Our travels</h2>
-          <div>
-            <input value={this.state.inputValue} onChange={this.handleInputChange} type="text" placeholder="Search..." />
+          <div className="select_container">
+            {/* <input value={this.state.inputValue} onChange={this.handleInputChange} type="text" placeholder="Search..." /> */}
+            {/* <select name="country_select" id="country_select">
+              <option value="Polska">Polska</option>
+              <option value="Chorwacja">Chorwacja</option>
+              <option value="Hiszpania">Hiszpania</option>
+              <option value="Włochy">Włochy</option>
+              <option value="Szwecja">Szwecja</option>
+              <option value="Francja">Francja</option>
+              <option value="Norwegia">Norwegia</option>
+              <option value="Wielka Brytania">Wielka Brytania</option>
+              <option value="Polska">Polska</option>
+              <option value="Ukraina">Ukraina</option>
+              <option value="San Marino">San Marino</option>
+              <option value="Portugalia">Portugalia</option>
+              <option value="Wietnam">Wietnam</option>
+              <option value="Turcja">Turcja</option>
+              <option value="Zjednoczone Emiraty Arabskie">Zjednoczone Emiraty Arabskie</option>
+              <option value="USA">USA</option>
+              <option value="Republika Dominikany">Republika Dominikany</option>
+              <option value="Egipt">Egipt</option>
+            </select> */}
+            <select name="continent_select" id="continent_select" calue={this.state.selectValue} onChange={this.handleSelect}>
+              <option value="All">All</option>
+              <option value="Europe">Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="Africa">Africa</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+              <option value="Australia">Australia</option>
+            </select>
           </div>
         </div>
         <section className="travels">
           {/* <Travel img={travels[0].src} /> */}
-          {travelSection.length ? travelSection : <p className="error">Jeszcze tu nie byliśmy :(</p>}
+          {travelSection.length ? travelSection : <p className="error">We haven't been here yet :(</p>}
         </section>
+        <footer className="footer">
+          Blog 2D
+            
+        </footer>
       </div>
     );
   }

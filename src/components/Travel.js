@@ -12,11 +12,10 @@ class Travel extends Component {
     })
   }
   render() {
-    const { author, place, descriptionPL, descriptionEN, src } = this.props.data;
+    const { author, place, description, src } = this.props.data;
     const imgs = src.map(img => {
       return <img src={img} alt={img} key={img} />
     })
-    const description = this.state.isEnglish ? descriptionEN : descriptionPL
     return (
       <div className="travel">
         <div className="travel_data">
@@ -24,10 +23,10 @@ class Travel extends Component {
           <p>Place: {place}</p>
         </div>
         <div className="travel_desc">
-          <div className="input">
+          {/* <div className="input">
             <label htmlFor="version">en</label>
             <input type="checkbox" value={this.state.isEnglish} name="version" id="version" onChange={this.handleCheckboxChange} />
-          </div>
+          </div> */}
           <p>
             {description}
           </p>
