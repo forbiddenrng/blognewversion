@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { SRLWrapper } from "simple-react-lightbox";
 import './Travel.css'
+import SimpleReactLightbox from 'simple-react-lightbox'
 class Travel extends Component {
   state = {
     isEnglish: false,
@@ -31,9 +32,11 @@ class Travel extends Component {
             {description}
           </p>
           <div className="images_container">
-            <SRLWrapper>
-              {imgs}
-            </SRLWrapper>
+            <SimpleReactLightbox>
+              <SRLWrapper>
+                {imgs}
+              </SRLWrapper>
+            </SimpleReactLightbox>
           </div>
         </div>
       </div>
