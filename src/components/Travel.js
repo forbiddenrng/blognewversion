@@ -13,15 +13,20 @@ class Travel extends Component {
     })
   }
   render() {
-    const { author, place, description, src } = this.props.data;
-    const imgs = src.map(img => {
-      return <img src={img} alt={img} key={img} />
-    })
+    const { place, description, src } = this.props.data;
+    let imgs;
+    if (src) {
+      imgs = src.map(img => {
+        return <img src={img} alt={img} key={img} />
+      })
+    }
+    // const imgs = src.map(img => {
+    //   return <img src={img} alt={img} key={img} />
+    // })
     return (
       <div className="travel">
         <div className="travel_data">
-          <h4>Author: <span>{author}</span></h4>
-          <p>Place: {place}</p>
+          <p>Place: <b>{place}</b></p>
         </div>
         <div className="travel_desc">
           {/* <div className="input">

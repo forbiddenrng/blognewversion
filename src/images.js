@@ -28,8 +28,9 @@ import vietnam3 from './img/vietnam3.png';
 import italy1 from './img/italy1.png';
 import italy2 from './img/italy2.png';
 import italy3 from './img/italy3.png';
-
-
+import crotiaTwo from './img/crotiaTwo.png';
+import france1 from './img/france1.png';
+import france2 from './img/france2.png';
 const imagesArray = {
   // gawronA: [gawronA1, gawronA2, gawronA3]
   mallorca: [mallorca1, mallorca2],
@@ -39,6 +40,8 @@ const imagesArray = {
   grandcanyon: [grandcanyon1, grandcanyon2, grandcanyon3],
   vietnam: [vietnam1, vietnam2, vietnam3],
   italy: [italy1, italy2, italy3],
+  crotiaTwo: [crotiaTwo],
+  france: [france1, france2],
 }
 
 
