@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/blognewversion/static/css/main.fb0d64af.chunk.css",
-    "main.js": "/blognewversion/static/js/main.a4203a2a.chunk.js",
-    "main.js.map": "/blognewversion/static/js/main.a4203a2a.chunk.js.map",
+    "main.js": "/blognewversion/static/js/main.3811edb0.chunk.js",
+    "main.js.map": "/blognewversion/static/js/main.3811edb0.chunk.js.map",
     "runtime-main.js": "/blognewversion/static/js/runtime-main.6aa05406.js",
     "runtime-main.js.map": "/blognewversion/static/js/runtime-main.6aa05406.js.map",
     "static/js/2.e8ded13d.chunk.js": "/blognewversion/static/js/2.e8ded13d.chunk.js",
@@ -17,6 +17,9 @@
     "static/media/crotia5.d66011ad.png": "/blognewversion/static/media/crotia5.d66011ad.png",
     "static/media/crotia6.d3ffef1d.png": "/blognewversion/static/media/crotia6.d3ffef1d.png",
     "static/media/crotia7.0024c9b2.png": "/blognewversion/static/media/crotia7.0024c9b2.png",
+    "static/media/crotiaTwo.77f963c0.png": "/blognewversion/static/media/crotiaTwo.77f963c0.png",
+    "static/media/france1.d62b5774.png": "/blognewversion/static/media/france1.d62b5774.png",
+    "static/media/france2.2eca6e1a.png": "/blognewversion/static/media/france2.2eca6e1a.png",
     "static/media/grandcanyon1.905cece9.png": "/blognewversion/static/media/grandcanyon1.905cece9.png",
     "static/media/grandcanyon2.08bf367b.png": "/blognewversion/static/media/grandcanyon2.08bf367b.png",
     "static/media/grandcanyon3.ad1b0492.png": "/blognewversion/static/media/grandcanyon3.ad1b0492.png",
@@ -42,6 +45,6 @@
     "static/js/runtime-main.6aa05406.js",
     "static/js/2.e8ded13d.chunk.js",
     "static/css/main.fb0d64af.chunk.css",
-    "static/js/main.a4203a2a.chunk.js"
+    "static/js/main.3811edb0.chunk.js"
   ]
 }
