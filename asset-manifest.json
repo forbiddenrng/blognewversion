@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/blognewversion/static/css/main.fb0d64af.chunk.css",
-    "main.js": "/blognewversion/static/js/main.3811edb0.chunk.js",
-    "main.js.map": "/blognewversion/static/js/main.3811edb0.chunk.js.map",
+    "main.css": "/blognewversion/static/css/main.79e5ead8.chunk.css",
+    "main.js": "/blognewversion/static/js/main.2514cbe8.chunk.js",
+    "main.js.map": "/blognewversion/static/js/main.2514cbe8.chunk.js.map",
     "runtime-main.js": "/blognewversion/static/js/runtime-main.6aa05406.js",
     "runtime-main.js.map": "/blognewversion/static/js/runtime-main.6aa05406.js.map",
     "static/js/2.e8ded13d.chunk.js": "/blognewversion/static/js/2.e8ded13d.chunk.js",
     "static/js/2.e8ded13d.chunk.js.map": "/blognewversion/static/js/2.e8ded13d.chunk.js.map",
     "index.html": "/blognewversion/index.html",
-    "static/css/main.fb0d64af.chunk.css.map": "/blognewversion/static/css/main.fb0d64af.chunk.css.map",
+    "static/css/main.79e5ead8.chunk.css.map": "/blognewversion/static/css/main.79e5ead8.chunk.css.map",
     "static/js/2.e8ded13d.chunk.js.LICENSE.txt": "/blognewversion/static/js/2.e8ded13d.chunk.js.LICENSE.txt",
+    "static/media/clas.842cbe6f.jpg": "/blognewversion/static/media/clas.842cbe6f.jpg",
     "static/media/crotia1.39bf8d9c.png": "/blognewversion/static/media/crotia1.39bf8d9c.png",
     "static/media/crotia2.a7c23ad8.png": "/blognewversion/static/media/crotia2.a7c23ad8.png",
     "static/media/crotia3.fc70af8b.png": "/blognewversion/static/media/crotia3.fc70af8b.png",
@@ -44,7 +45,7 @@
   "entrypoints": [
     "static/js/runtime-main.6aa05406.js",
     "static/js/2.e8ded13d.chunk.js",
-    "static/css/main.fb0d64af.chunk.css",
-    "static/js/main.3811edb0.chunk.js"
+    "static/css/main.79e5ead8.chunk.css",
+    "static/js/main.2514cbe8.chunk.js"
   ]
 }
