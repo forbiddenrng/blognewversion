@@ -31,8 +31,10 @@ import italy3 from './img/italy3.png';
 import crotiaTwo from './img/crotiaTwo.png';
 import france1 from './img/france1.png';
 import france2 from './img/france2.png';
+import clas from './img/clas.jpg';
 const imagesArray = {
   // gawronA: [gawronA1, gawronA2, gawronA3]
+  clas: clas,
   mallorca: [mallorca1, mallorca2],
   sweden: [sweden1, sweden2, sweden3, sweden4],
   turkey: [turkey1, turkey2, turkey3, turkey4],

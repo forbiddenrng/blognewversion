@@ -4,6 +4,7 @@
   font-family: arial;
   box-shadow: 1px -1px 3px gray;
   background-color: white;
+
 }
 .about h3{
   font-size: 20px;
@@ -12,6 +13,20 @@
 .about p {
   margin-top: 10px;
   line-height: 120%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.class_photo {
+  margin-top: 20px;
+}
+.class_photo img {
+  border-radius: 20%;
+  border: 3px solid gray;
+  width: 100%;
+  
 }
 @media(min-width: 640px){
   .about{
@@ -28,6 +43,13 @@
   }
   .about p {
     font-size: 17px;
+  }
+  .class_photo {
+    
+    align-self: center;
+  }
+  .content {
+    flex-direction: row;
   }
 }
 @media(min-width: 1024px){
