@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <div>
         <section className="header">
-          <h1>Blog 2D</h1>
+          <h1>Blog Mat Geo Ang</h1>
         </section>
         <header className="photo">
           <img src={this.props.img} alt="img" />
